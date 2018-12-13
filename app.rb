@@ -5,7 +5,6 @@ class Battle < Sinatra::Base
   enable :sessions
 
   get "/" do
-    "Enter player names"
     erb(:index)
   end
 
