@@ -14,7 +14,6 @@ feature "Hitpoints" do
   scenario "View player hitpoints" do
     visit("/")
     sign_in_and_play
-    visit("/play")
     click_button "Enter the Arena"
     expect(page).to have_content "Sub-Zero - 100HP : Scorpion - 100HP"
   end
